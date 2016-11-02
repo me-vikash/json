@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>Json</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="css/style.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+
+<div id="jstree">
+
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jstree.min.js"></script>
+    
+	<script>
+    $(function() {
+
+    $('#jstree').jstree({
+    'core': {
+
+      'data' : [
+       { "id" : "ajson1", "parent" : "#", "text" : "Songs" },
+       
+	   { "id" : "ajson2", "parent" : "ajson1", "text" : "Kishore", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+       { "id" : "ajson3", "parent" : "ajson1", "text" : "Manna", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}"},
+	   
+	   { "id" : "ajson4", "parent" : "ajson2", "text" : "Lata", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+       { "id" : "ajson5", "parent" : "ajson2", "text" : "Asha", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   
+	   { "id" : "ajson6", "parent" : "ajson3", "text" : "Lata", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+       { "id" : "ajson7", "parent" : "ajson3", "text" : "Asha", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   
+	   { "id" : "ajson11", "parent" : "ajson4", "text" : "Song 1", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   { "id" : "ajson12", "parent" : "ajson4", "text" : "Song 2", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   
+	   { "id" : "ajson13", "parent" : "ajson5", "text" : "Song 3", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   
+	   { "id" : "ajson8", "parent" : "ajson6", "text" : "Song 4", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   
+	   { "id" : "ajson9", "parent" : "ajson7", "text" : "Song 5", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   { "id" : "ajson10", "parent" : "ajson7", "text" : "Song 6", "state" : "{'opened': 'false', 'disabled': 'false', 'selected': 'false'}" },
+	   
+	]
+},
+
+    "plugins": ["search"]
+
+
+  });
+});
+
+    
+</script>
+	</body>
+</html>
